@@ -1,0 +1,68 @@
+header{
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.content{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 24px;
+
+
+}
+
+.logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar{
+	width: 603px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.geolocation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.geolocation img{
+	margin-right: 13px;
+}
+
+.navbarItem{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	/* line-height: 25px; */
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.navbarItem:hover{
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.8);
+	box-shadow: inset 0 -3px 0 -1px #DBDDDD;
+}
+
+.navbarItemSelect{
+	box-shadow: inset 0 -3px 0 -1px #666;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.navbarItemSelect:hover{
+	box-shadow: inset 0 -3px 0 -1px #666;
+		color: rgba(0, 0, 0, 0.8);
+}
