@@ -6,7 +6,7 @@ header{
 	background-color: white;
 }
 
-.content{
+.headerContent{
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -33,6 +33,11 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+}
+
+.geolocationState:hover{
+	color:#FFDD2D;
 }
 
 .geolocation img{
