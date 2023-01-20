@@ -9,9 +9,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/index/style.css">
-	<link rel="stylesheet" href="css/index/header.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/index/body.css">
+	<link rel="stylesheet" href="css/promo.css">
 	<title>Document</title>
 </head>
 
@@ -25,12 +26,24 @@
 					</a>
 				</div>
 				<div class="navbar">
-					<div class="navbarItem navbarItemSelect">Главная</div>
-					<div class="navbarItem">Услуги</div>
-					<div class="navbarItem">О нас</div>
-					<div class="navbarItem">Калькулятор</div>
-					<div class="navbarItem">Статьи</div>
-					<div class="navbarItem">Контакты</div>
+					<a href="index.html">
+						<div class="navbarItem navbarItemSelect">Главная</div>
+					</a>
+					<a href="services.html">
+						<div class="navbarItem">Услуги</div>
+					</a>
+					<a href="about.html">
+						<div class="navbarItem">О нас</div>
+					</a>
+					<a href="calc.html">
+						<div class="navbarItem">Калькулятор</div>
+					</a>
+					<a href="blog.html">
+						<div class="navbarItem">Статьи</div>
+					</a>
+					<a href="contacts.html">
+						<div class="navbarItem">Контакты</div>
+					</a>
 				</div>
 				<div class="geolocation">
 					<img src="img/geo.svg" alt="geo" />
@@ -55,7 +68,8 @@
 							</h2>
 						</div>
 						<div class="mainContentLeftButton">
-							Оставить заявку
+							<button>Оставить заявку</button>
+
 						</div>
 						<div class="mainContentLeftItems">
 							<div class="mainContentLeftItemsItem">
@@ -106,6 +120,7 @@
 							<div class="servicesContentFirstRowItemButton">
 								Подробнее
 							</div>
+							<img src="img/hands.svg" alt="">
 						</div>
 						<div class="servicesContentFirstRowItem">
 							<div class="servicesContentFirstRowItemTitle">
@@ -121,6 +136,7 @@
 							<div class="servicesContentFirstRowItemButton">
 								Подробнее
 							</div>
+							<img src="img/town.svg" alt="">
 						</div>
 					</div>
 					<div class="servicesContentSecondRow">
@@ -138,7 +154,7 @@
 							<div class="servicesContentSecondRowItemButton">
 								Подробнее
 							</div>
-
+							<img src="img/house.svg" alt="">
 						</div>
 						<div class="servicesContentSecondRowItem">
 							<div class="servicesContentSecondRowItemTitle">
@@ -154,7 +170,7 @@
 							<div class="servicesContentSecondRowItemButton">
 								Подробнее
 							</div>
-
+							<img src="img/family.svg" alt="">
 						</div>
 						<div class="servicesContentSecondRowItem">
 							<div class="servicesContentSecondRowItemTitle">
@@ -170,6 +186,7 @@
 							<div class="servicesContentSecondRowItemButton">
 								Подробнее
 							</div>
+							<img src="img/pasport.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -200,10 +217,163 @@
 							</div>
 						</div>
 						<div class="aboutContentItemRight">
-
+							<img src="img/about.svg" alt="">
 						</div>
 						<div class="aboutContentItemButton">
 							<button>Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="calc">
+			<div class="container">
+				<div class="calcTitle">
+					Калькулятор
+				</div>
+				<div class="calcContent">
+					<div class="calcContentLeft">
+						<div class="calcContentLeftRow">
+							<div class="calcContentLeftRowTitle">
+								Стоимость недвижимости
+							</div>
+							<div class="calcContentLeftRowText" id="costResult">
+								5 000 000 ₽
+							</div>
+							<div class="calcContentLeftRowInput">
+								<input type="range" id="cost" class="range" name="cost" min="1000000" max="30000000"
+									value="5000000" step="25000"
+									style="background: linear-gradient(to right, rgb(255, 221, 45) 16.6667%, rgb(223, 224, 225) 16.6667%);">
+							</div>
+							<div class="calcContentLeftRowHint">
+								<div class="calcContentLeftRowHintOne">
+									1 млн
+								</div>
+								<div class="calcContentLeftRowHintTwo">
+									15 млн
+								</div>
+								<div class="calcContentLeftRowHintThree">
+									30 млн
+								</div>
+							</div>
+						</div>
+						<div class="calcContentLeftRow">
+							<div class="calcContentLeftRowTitle">
+								Первоначальный взнос
+							</div>
+							<div class="calcContentLeftRowText" id="paymentResult">
+								1 000 000 ₽
+							</div>
+							<div class="calcContentLeftRowInput">
+								<input type="range" id="payment" class="range" name="payment" min="0" max="5000000"
+									value="1000000" step="25000"
+									style="background: linear-gradient(to right, rgb(255, 221, 45) 20%, rgb(223, 224, 225) 3.33333%);">
+							</div>
+							<div class="calcContentLeftRowHint">
+								<div class="calcContentLeftRowHintOne">
+									0
+								</div>
+								<div class="calcContentLeftRowHintTwo" id="hintTwo">
+									2.5 млн
+								</div>
+								<div class="calcContentLeftRowHintThree" id="hintThree">
+									5 млн
+								</div>
+							</div>
+						</div>
+						<div class="calcContentLeftRow">
+							<div class="calcContentLeftRowTitle">
+								Срок кредитования
+							</div>
+							<div class="calcContentLeftRowText" id="periodResult">
+								20 лет
+							</div>
+							<div class="calcContentLeftRowInput">
+								<input type="range" id="period" class="range" name="period" min="1" max="30" value="20"
+									step="1"
+									style="background: linear-gradient(to right, rgb(255, 221, 45) 65.6667%, rgb(223, 224, 225) 65.6667%);">
+							</div>
+							<div class="calcContentLeftRowHint">
+								<div class="calcContentLeftRowHintOne">
+									1 год
+								</div>
+								<div class="calcContentLeftRowHintTwo">
+									15 лет
+								</div>
+								<div class="calcContentLeftRowHintThree">
+									30 лет
+								</div>
+							</div>
+						</div>
+						<div class="calcContentLeftRow">
+							<div class="calcContentLeftRowTitle">
+								Процентная ставка
+							</div>
+							<div class="calcContentLeftRowText" id="rateResult">
+								6 %
+							</div>
+							<div class="calcContentLeftRowInput">
+								<input type="range" id="rate" class="range" name="rate" min="3" max="25" value="6"
+									step="0.1"
+									style="background: linear-gradient(to right, rgb(255, 221, 45) 15.3913%, rgb(223, 224, 225) 15.3913%);">
+							</div>
+							<div class="calcContentLeftRowHint">
+								<div class="calcContentLeftRowHintOne">
+									3 %
+								</div>
+								<div class="calcContentLeftRowHintTwo">
+									14 %
+								</div>
+								<div class="calcContentLeftRowHintThree">
+									25 %
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+					<div class="calcContentRight">
+						<div class="calcContentRightTitle">
+							Рассчет ипотеки
+						</div>
+						<div class="calcContentRightRow">
+							<div class="calcContentRightRowTitle">
+								Сумма кредита
+							</div>
+							<div class="calcContentRightRowCount" id="costRight">
+								4 000 000 ₽
+							</div>
+						</div>
+						<div class="calcContentRightRowLine"></div>
+						<div class="calcContentRightRow">
+							<div class="calcContentRightRowTitle">
+								Срок кредитования
+							</div>
+							<div class="calcContentRightRowCount" id="periodRight">
+								20 лет
+							</div>
+						</div>
+						<div class="calcContentRightRowLine"></div>
+						<div class="calcContentRightRow">
+							<div class="calcContentRightRowTitle">
+								Процентная ставка
+							</div>
+							<div class="calcContentRightRowCount" id="rateRight">
+								6 %
+							</div>
+						</div>
+						<div class="calcContentRightRowLine"></div>
+						<div class="calcContentRightRow">
+							<div class="calcContentRightRowTitle">
+								Ежемесячный платёж
+							</div>
+							<div class="calcContentRightRowCount" id="resultRight">
+								23 982 ₽
+							</div>
+						</div>
+						<div class="calcContentRightButton">
+							<button>Оставить заявку</button>
 						</div>
 					</div>
 				</div>
@@ -230,7 +400,9 @@
 									</p>
 								</div>
 							</div>
-							<div class="blogContentFirstRowItemRight"></div>
+							<div class="blogContentFirstRowItemRight">
+								<img src="img/blog hands.svg" alt="">
+							</div>
 							<div class="blogContentFirstRowItemButton">
 								<button>Подробнее</button>
 							</div>
@@ -238,22 +410,43 @@
 					</div>
 					<div class="blogContentSecondRow">
 						<div class="blogContentSecondRowItem">
-							<div class="blogContentSecondRowItemTitle"></div>
-							<div class="blogContentSecondRowItemText"></div>
+							<div class="blogContentSecondRowItemTitle">
+								<h2>
+									Выпустили платежный стикер для оплаты смартфоном
+								</h2>
+							</div>
+							<div class="blogContentSecondRowItemText">
+								<h3>
+									Можно расплачиваться даже с помощью айфона
+								</h3>
+							</div>
 							<div class="blogContentSecondRowItemButton">
 								<a href="#">Читать</a>
 							</div>
 						</div>
 						<div class="blogContentSecondRowItem">
-							<div class="blogContentSecondRowItemTitle"></div>
-							<div class="blogContentSecondRowItemText"></div>
+							<div class="blogContentSecondRowItemTitle">
+								<h2>Выпустили платежный стикер для оплаты смартфоном</h2>
+							</div>
+							<div class="blogContentSecondRowItemText">
+								<h3>
+									Можно расплачиваться даже с помощью айфона
+								</h3>
+							</div>
 							<div class="blogContentSecondRowItemButton">
 								<a href="#">Читать</a>
 							</div>
 						</div>
 						<div class="blogContentSecondRowItem">
-							<div class="blogContentSecondRowItemTitle"></div>
-							<div class="blogContentSecondRowItemText"></div>
+							<div class="blogContentSecondRowItemTitle">
+								<h2>Выпустили платежный стикер для оплаты смартфоном</h2>
+							</div>
+							<div class="blogContentSecondRowItemText">
+								<h3>
+									Можно расплачиваться даже с помощью айфона
+
+								</h3>
+							</div>
 							<div class="blogContentSecondRowItemButton">
 								<a href="#">Читать</a>
 							</div>
@@ -265,7 +458,97 @@
 				</div>
 			</div>
 		</div>
+		<div class="contacts">
+			<div class="container">
+				<div class="contactsTitle">
+					Контакты
+				</div>
+				<div class="contactsContent">
+					<div class="contactsContentLeft">
+						<div class="contactsContentLeftTitle">
+							Обратная связь
+						</div>
+						<div class="contactsContentLeftInputs">
+							<div class="inputBox">
+								<input type="text" required="required">
+								<span>
+									Ваш имя
+								</span>
+							</div>
+							<div class="inputBox">
+								<input type="text" required="required">
+								<span>
+									Ваш телефон
+								</span>
+							</div>
+						</div>
+						<div class="contactsContentLeftButton">
+							<button>Оставить заявку</button>
+						</div>
+						<div class="contactsContentLeftHint">
+							*Оставьте заявку и мы обязательно решим Вашу задачу
+						</div>
+					</div>
+					<div class="contactsContentRight">
+						<div class="contactsContentRightAddress">
+							<div class="contactsContentRightTitle contactsContentRightAddressTitle">
+								Адрес:
+							</div>
+							<div class="contactsContentRightText contactsContentRightAddressText">
+								г. Ростов-на-Дону, ул. Штахановского 29А
+							</div>
+						</div>
+						<div class="contactsContentRightEmail">
+							<div class="contactsContentRightTitle contactsContentRightAddressTitle">
+								E-mail:
+							</div>
+							<div class="contactsContentRightText contactsContentRightAddressText">
+								Ustate@yandex.ru
+							</div>
+						</div>
+						<div class="contactsContentRightPhone">
+							<div class="contactsContentRightTitle contactsContentRightAddressTitle">
+								Телефон:
+							</div>
+							<div class="contactsContentRightText contactsContentRightAddressText">
+								+7 (988) 999-55-31
+							</div>
+						</div>
+						<div class="contactsContentRightSocial">
+							<img src="img/vk.svg" alt="вк" class="social" id="vk">
+							<img src="img/telegram.svg" alt="телеграм" class="social" id="telegram">
+							<img src="img/whatsapp.svg" alt="вацап" class="social" id="whatsapp">
+						</div>
+						<div class="ellipse1"></div>
+						<div class="ellipse2"></div>
+						<div class="ellipse3"></div>
+						<div class="ellipse4"></div>
+						<div class="ellipse5"></div>
+						<div class="ellipse6"></div>
+						<div class="ellipse7"></div>
+						<div class="plane"></div>
+						<div class="trace1"></div>
+						<div class="trace2"></div>
+						<div class="trace3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<div class="promo">
+		<div class="container">
+			<div class="promoContent">
+				<div class="promoContentLeft">
+					<img src="img/logo.svg" alt="Ustate">
+				</div>
+				<div class="promoContentRight">
+					<div class="promoContentRightPhone">+7 (988) 995-50-13</div>
+					<div class="promoContentRightGeo">г. Ростов-на-Дону</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/calc.js"></script>
 </body>
 
 </html>

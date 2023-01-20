@@ -29,6 +29,11 @@ header{
 	align-items: center;
 }
 
+.navbar a{
+	height: 100%;
+	text-decoration: none;
+}
+
 .geolocation{
 	display: flex;
 	justify-content: center;
@@ -62,12 +67,12 @@ header{
 	box-shadow: inset 0 -3px 0 -1px #DBDDDD;
 }
 
-.navbarItemSelect{
+.navbarItemSelect {
 	box-shadow: inset 0 -3px 0 -1px #666;
 	color: rgba(0, 0, 0, 0.8);
 }
 
-.navbarItemSelect:hover{
+.navbarItemSelect:hover {
 	box-shadow: inset 0 -3px 0 -1px #666;
-		color: rgba(0, 0, 0, 0.8);
+	color: rgba(0, 0, 0, 0.8);
 }
